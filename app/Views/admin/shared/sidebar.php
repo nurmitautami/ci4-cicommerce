@@ -4,7 +4,7 @@
 	<a href="index3.html" class="brand-link navbar-primary">
 	  	<img src="<?php echo base_url()?>/admin/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
 			style="opacity: .8">
-	  	<span class="brand-text font-weight-light">AdminLTE 3</span>
+	  	<span class="brand-text font-weight-light">Online Shop</span>
 	</a>
 	<!-- Sidebar -->
 	<div class="sidebar">
@@ -14,7 +14,7 @@
 		  		<img src="<?php echo base_url()?>/admin/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
 			</div>
 			<div class="info">
-		  		<a href="#" class="d-block">Alexander Pierce</a>
+		  		<a href="#" class="d-block">Erlangga Dwi Jiwantoro</a>
 			</div>
 	  	</div>
 
@@ -120,26 +120,6 @@
 							<a href="<?= site_url('admin/reports/payments') ?>" class="nav-link <?= ($currentAdminSubMenu == 'report-payment') ? 'active' : '' ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Payments</p>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="nav-item has-treeview  <?= ($currentAdminMenu == 'user-role') ? 'menu-open' : '' ?>">
-					<a href="#" class="nav-link">
-						<i class="nav-icon fas fa-users"></i>
-						<p>User & Roles<i class="fas fa-angle-left right"></i></p>
-					</a>
-					<ul class="nav nav-treeview">
-						<li class="nav-item">
-							<a href="<?= site_url('admin/users') ?>" class="nav-link <?= ($currentAdminSubMenu == 'user') ? 'active' : '' ?>">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Users</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="<?= site_url('admin/roles') ?>" class="nav-link <?= ($currentAdminSubMenu == 'role') ? 'active' : '' ?>">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Roles</p>
 							</a>
 						</li>
 					</ul>

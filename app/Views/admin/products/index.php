@@ -66,16 +66,19 @@
 									<td><?= $statuses[$product->status] ?></td>
 									<td>
 										<?php if (empty($product->deleted_at)): ?>
-											<a href="<?= site_url('admin/products/'. $product->id .'/edit') ?>" class="badge bg-info">edit</a>
+											<a href="<?= site_url('admin/products/'. $product->id .'/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
 											<form method="POST" action="<?= site_url('admin/products/'. $product->id) ?>" accept-charset="UTF-8" class="delete" style="display:inline-block">
 												<input name="_method" type="hidden" value="DELETE">
-												<button class="badge bg-danger" style="border:none !important">delete</button>
+												<button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt" style="border:none !important"></i></button>
 											</form>
 										<?php else: ?>
-											<a href="<?= site_url('admin/products/restore/'. $product->id) ?>" class="badge bg-warning">restore</a>
+											<a href="<?= site_url('admin/products/restore/'. $product->id) ?>" class="btn btn-warning btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+</svg></a>
 											<form method="POST" action="<?= site_url('admin/products/'. $product->id) ?>" accept-charset="UTF-8" class="delete" style="display:inline-block">
 												<input name="_method" type="hidden" value="DELETE">
-												<button class="badge bg-danger" style="border:none !important">delete permanently</button>
+												<button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt" style="border:none !important"></i></button>
 											</form>
 										<?php endif; ?>
 									</td>
