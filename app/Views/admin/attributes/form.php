@@ -10,7 +10,7 @@
 	<?php else: ?>
 		<?= form_open('admin/attributes') ?>
 	<?php endif; ?>
-		<?= form_hidden('id', isset($attribute->id) ? $attribute->id : null ) ?>
+		<?= form_hidden('id', isset($attribute->id) ? $attribute->id : '' ) ?>
 		<div class="card-body">
 			<?= view('admin/shared/flash_message') ?>
 			<div class="form-group">

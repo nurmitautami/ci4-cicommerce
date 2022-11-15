@@ -55,10 +55,10 @@
 								<td><?= $brand->id ?></td>
 								<td><?= $brand->name ?></td>
 								<td>
-									<a href="<?= site_url('admin/brands/'. $brand->id) ?>" class="badge bg-info">edit</a>
+									<a href="<?= site_url('admin/brands/'. $brand->id) ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
 									<form method="POST" action="<?= site_url('admin/brands/'. $brand->id) ?>" accept-charset="UTF-8" class="delete" style="display:inline-block">
 										<input name="_method" type="hidden" value="DELETE">
-										<button class="badge bg-danger" style="border:none !important">delete</button>
+										<button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt" style="border:none !important"></i></button>
 									</form>
 								</td>
 							</tr>

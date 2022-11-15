@@ -55,10 +55,10 @@
 								<td><?= $attributeOption->id ?></td>
 								<td><?= $attributeOption->name ?></td>
 								<td>
-									<a href="<?= site_url('admin/attribute-options/'. $attribute->id .'/'. $attributeOption->id) ?>" class="badge bg-info">edit</a>
+									<a href="<?= site_url('admin/attribute-options/'. $attribute->id .'/'. $attributeOption->id) ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
 									<form method="POST" action="<?= site_url('admin/attribute-options/'. $attributeOption->id) ?>" accept-charset="UTF-8" class="delete" style="display:inline-block">
 										<input name="_method" type="hidden" value="DELETE">
-										<button class="badge bg-danger" style="border:none !important">delete</button>
+										<button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt" style="border:none !important"></i></button>
 									</form>
 								</td>
 							</tr>
